@@ -4,10 +4,10 @@
 
 #Le rime dovranno essere quindi mostrate in output utilizzando il metodo join.
 
-word_list = ["Dormire", "Salutare", "Autostop", "Starnuto",
-             "Camminare", "Nuotare", "Sciare", "Spray",
-             "Macho", "Volare", "Campana", "Okay",
-             "Baciare", "Capelli", "Saluti", "Superman"]
+words = ["Dormire", "Salutare", "Autostop", "Starnuto",
+         "Camminare", "Nuotare", "Sciare", "Spray",
+         "Macho", "Volare", "Campana", "Okay",
+         "Baciare", "Capelli", "Saluti", "Superman"]
 
 def rhyme(word_list):
     n = 3   #number of letters to detect rhymes
@@ -21,4 +21,4 @@ def rhyme(word_list):
     else:
         return ", ".join(rhyme_list)
 
-print(rhyme(word_list))
+print(rhyme(words))

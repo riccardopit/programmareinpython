@@ -10,11 +10,11 @@ def psw_generator():
     while True:
         psw_type = input("Chose a type of password. Easy or difficult? [e/d] ")
         if psw_type == "e":
-            for x in range(8):
+            for i in range(8):
                 psw += random.choice(string.ascii_letters + string.digits)
             break
         elif psw_type == "d":
-            for x in range(20):
+            for i in range(20):
                 psw += random.choice(string.ascii_letters + string.digits + string.punctuation)
             break
         else:

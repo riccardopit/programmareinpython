@@ -6,11 +6,11 @@
 
 from random import randrange
 
-def genera_mac():
+def generate_mac():
     mac = ""
-    for x in range(12):
+    for i in range(12):
         mac += f"{randrange(16):X}"
     mac = ":".join(a+b for a,b in zip(mac[::2], mac[1::2]))
     return mac
     
-print(genera_mac())
+print(generate_mac())

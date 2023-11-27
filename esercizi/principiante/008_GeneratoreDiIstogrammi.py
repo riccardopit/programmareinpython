@@ -10,12 +10,15 @@
 
 #*****
 
-num_list = [1, 30, 24, 3, 23]
+nums = [1, 30, 24, 3, 23]
 
 def isto(num_list):
     text = ""
-    for i in num_list:
-        text += "*"*i + "\n"
+    n_nums = len(num_list)
+    count = 0
+    for num in num_list:
+        text += "*"*num + "\n" if count < n_nums-1 else "*"*num
+        count += 1
     return text
 
-print(isto(num_list))
+print(isto(nums))

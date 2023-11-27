@@ -2,12 +2,12 @@
 
 #Qualora l'elemento sia presente nella lista, il programma dovrà comunicarci l'indice dell'elemento tramite il metodo index.
 
-letter_list = ["a", "b", "c"]
+letters = ["a", "b", "c"]
 
 letter = input("Insert a letter: ")
 
 try:
-    index = letter_list.index(letter)
-    print("Letter is present at index " + str(index) + ".")
+    index = letters.index(letter)
+    print(f"Letter '{letter}' is present at index {index}.")
 except:
-    print("Letter is not present.")
+    print(f"Letter '{letter}' is not present.")

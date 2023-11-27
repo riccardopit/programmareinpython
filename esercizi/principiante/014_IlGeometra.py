@@ -5,27 +5,35 @@
 #un triangolo
 #Sentitevi liberi di estendere le potenzialità della funzione quanto meglio credete!
 
+def input_validated(text):
+    while True:
+        val = input(text)
+        if val.isnumeric():
+            val = float(val)
+            return val
+        print("Input not valid.")
+
 def area():
-    print("Chose a shape which you want calculate the area:\na - Circle\nb - Square\nc - Rectangle\nd - Triangle")
+    print(f"Chose a shape which you want calculate the area:\na - Circle\nb - Square\nc - Rectangle\nd - Triangle")
     s = input("Insert your choice: ")
     if s == "a" or s == "A":
-        r = float(input("Insert radius: "))
+        r = input_validated("Insert radius in mm: ")
         a = r**2 * 3.14
-        return "The area of the circle is " + str(a) + "."
+        return f"The area of the circle is {a} mm2."
     elif s == "b" or s == "B":
-        l = float(input("Insert side: "))
+        l = input_validated("Insert side in mm: ")
         a = l**2
-        return "The area of the square is " + str(a) + "."
+        return f"The area of the square is {a} mm2."
     elif s == "c" or s == "C":
-        b = float(input("Insert base: "))
-        h = float(input("Insert height: "))
+        b = input_validated("Insert base in mm: ")
+        h = input_validated("Insert height in mm: ")
         a = b * h
-        return "The area of the rectangle is " + str(a) + "."
+        return f"The area of the rectangle is {a} mm2."
     elif s == "d" or s == "D":
-        b = float(input("Insert base: "))
-        h = float(input("Insert height: "))
+        b = input_validated("Insert base in mm: ")
+        h = input_validated("Insert height in mm: ")
         a = b * h / 2
-        return "The area of the triangle is " + str(a) + "."
+        return f"The area of the triangle is {a} mm2."
     else:
         return "No shape found."
 

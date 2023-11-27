@@ -5,6 +5,6 @@ def length_conv(meters):
     yards = meters * 1.09361
     feet = meters * 3.28084
     inches = meters * 39.3701
-    return str(meters) + " meters correspond to " + str(miles) + " miles, " + str(yards) + " yards, " + str(feet) + " feet, " + str(inches) + " inches."
+    return f"{meters} meters correspond to {miles} miles, {yards} yards, {feet} feets, {inches} inches."
 
 print(length_conv(1))

@@ -5,6 +5,6 @@ vowels = "aeiou"
 letter = input("Insert a letter: ")
 
 if letter in vowels:
-    print("It's a vowel.")
+    print(f"Letter '{letter}' is a vowel.")
 else:
-    print("It's not a vowel.")
+    print(f"Letter '{letter}' is not a vowel.")

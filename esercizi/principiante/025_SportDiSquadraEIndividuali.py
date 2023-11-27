@@ -14,6 +14,6 @@ def sport_info(sports):
     if sport in sports.keys():
         return "It's a " + sports[sport] + " sport."
     else:
-        return "This sport doesn't exist."
+        return "I don't know this sport."
 
 print(sport_info(sports))

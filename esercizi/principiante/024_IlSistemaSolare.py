@@ -16,9 +16,9 @@ def planets_info():
     sat = 0
     print("Planets info: ")
     for planet in planets:
-        print(str(index) + " - " + planet[0] + ", " + planet[1] + ", " + str(planet[2]) + " satellites")
+        print(f"{index} - {planet[0]}, {planet[1]}, {planet[2]} satellites")
         sat += planet[2]
         index += 1
-    print("Total satellites: " + str(sat))
+    print(f"Total satellites: {sat}")
 
 planets_info()

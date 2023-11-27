@@ -4,7 +4,7 @@ letters = "abcdefghijklmnopqrstuvwxyz"
 
 def length(str_list):
     count = 0
-    for i in str_list:
+    for _ in str_list:
         count += 1
     return count
 
